@@ -31,7 +31,7 @@ const NoteListDefault = () => {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <h1 className="text-xl font-bold text-center md:text-left">
+        <h1 className="text-xl font-bold text-center md:text-left ">
           My Notes
         </h1>
         <button className="font-bold text-2xl md:hidden" type="button" onClick={() => setShowModal(true)}>+</button>
@@ -59,11 +59,12 @@ const NoteListDefault = () => {
           </button>{" "}
         </form>{" "}
       </search>
-      <div className="grid lg:grid-cols-2 md:grid-cols-0 gap-4 mt-5">
-        
+      <div className="text-center mt-5">
         {filteredNotes.length === 0 && (
           <div className="text-xl font-semibold mx-auto">No Notes</div>
         )}
+      </div>
+      <div className="grid lg:grid-cols-2 md:grid-cols-0 gap-4 mt-5">
         {filteredNotes.map((item) => (
           <div
             key={item.id}
