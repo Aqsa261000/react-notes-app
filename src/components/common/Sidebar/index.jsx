@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import NoteContext from "../../../context/Note/NoteContext";
+import { CloseIcon } from "../../../assets";
 
 const Sidebar = () => {
   const { AddNote, noteFormData, showModal, setShowModal, EditNote } =
@@ -45,12 +46,12 @@ const Sidebar = () => {
   return (
     <>
       <div className="flex-col gap-4 md:flex hidden w-64 p-4">
-        <div className="font-bold flex gap-2 ">
-          <img src="favicon.ico" alt="nav-logo" />
+        <div className="font-bold flex gap-2 items-center">
+          <img src="favicon.ico" alt="nav-logo" className="w-7" />
           <p className="text-xl">QuickStart</p>
         </div>
         <button
-          className="my-2 bg-orange-500 py-2 rounded-lg"
+          className="my-2 bg-yellow-500 py-2 rounded-lg font-bold"
           type="button"
           onClick={() => setShowModal(true)}
         >
@@ -64,11 +65,11 @@ const Sidebar = () => {
             <div className="flex justify-between">
               <h1 className="font-bold text-2xl py-4 mx-auto">Note Form</h1>
               <button
-                className="text-red-600 font-bold"
+                className="text-red-600 font-bold w-5"
                 type="button"
                 onClick={() => setShowModal(false)}
               >
-                X
+                <img src={CloseIcon} alt="close-icon" />
               </button>
             </div>
             <form action="#">
