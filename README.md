@@ -1,13 +1,13 @@
-Notes App (React + Context API)
+**Notes App (React + Context API)**
 
-Features:
+**Features:**
 - Add / Edit / Delete Notes
 - Live + Submit Search
 - Responsive UI (Tailwind CSS)
 - Modal for note creation
 - Data persistence using localStorage
 
-Tech Stack:
+**Tech Stack:**
 - React.js
 - Context API
 - Tailwind CSS
