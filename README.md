@@ -1,4 +1,4 @@
-# 📝 QuickStart Notes App (React + Context API)
+# QuickStart Notes App (React + Context API)
 
 ## 🔗 Live Link
 👉 https://react-notes-app-beryl.vercel.app/
